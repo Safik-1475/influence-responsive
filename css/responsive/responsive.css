@@ -1,0 +1,18 @@
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .navigation{
+        display:flex;
+        justify-content: space-between;
+    }
+    .navigation .logo>a{
+        font-size:1.5em;
+    }
+    .navigation>.bars{
+        display:block;
+    }
+    .navigation ul.links{
+        display:none;
+    }
+    
+}

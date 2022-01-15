@@ -1,12 +1,91 @@
 /*----------------------------------------------------
                     global css
 ------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@500&family=Roboto:wght@400;700&display=swap');
+
 *{
     margin:0;
     padding:0;
+}
+body{
+    font-size:14px;
+    line-height:1.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    box-sizing:border-box;
+    outline:none;
+    color:rgb(56,58,59);
+    font-weight:400;
 }
 .container{
     max-width:1200px;
     margin:0 auto;
     padding:30px 60px;
 }
+img{
+    max-width:100%;
+    vertical-align:middle;
+}
+a{
+    text-decoration:none;
+}
+ul{
+    margin:0;
+}
+h1,h2,h3,h4,h5,h6{
+    color:rgb(56,58,59);
+    text-transform:capitalize;
+    font-weight:700;
+}
+p{
+    font-weight:500;
+    font-size:15px;
+    text-transform:capitalize;
+}
+/*----------------------------------------------------
+                     header
+------------------------------------------------------*/
+.navigation{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.navigation .logo>a{
+    font-size:28px;
+    font-weight:700;
+    color:rgb(56,58,59);
+    text-transform:capitalize;
+}
+.navigation>.bars{
+    display:none;
+    font-size:17px;
+    color:rgb(56,58,59);
+}
+.navigation .menu{
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly
+}
+.navigation .menu .shopping-cart{
+    font-size:17px;
+    color:rgb(56,58,59);
+    padding:8px 10px;
+}
+.navigation ul.links{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navigation ul.links li{
+    margin:0 10px;
+    list-style:none;
+}
+.navigation ul.links li a{
+    font-size:17px;
+    text-transform:capitalize;
+    color:rgb(56,58,59);
+    padding:8px 10px;
+}
+ 

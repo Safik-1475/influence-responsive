@@ -18,6 +18,7 @@ body{
     outline:none;
     color:rgb(56,58,59);
     font-weight:400;
+    overflow-x: hidden;
 }
 .container{
     max-width:1200px;
@@ -36,13 +37,14 @@ ul{
 }
 h1,h2,h3,h4,h5,h6{
     color:rgb(56,58,59);
-    text-transform:capitalize;
     font-weight:700;
 }
 p{
     font-weight:500;
-    font-size:15px;
+    font-size:16px;
     text-transform:capitalize;
+    line-height:1.5em;
+    color:rgb(56,58,59);
 }
 /*----------------------------------------------------
                      header
@@ -88,4 +90,57 @@ p{
     color:rgb(56,58,59);
     padding:8px 10px;
 }
+
+/*----------------------------------------------------
+                     banner
+------------------------------------------------------*/
  
+.flex-container{
+    display:flex;
+    justify-content:space-between;
+}
+.flex-item-left{
+    flex:50%;
+    margin:6px;
+    padding:12px;
+}
+.flex-item-left>.banner-title{
+    font-size:42px;
+    line-height:1.2em;
+}
+.flex-item-left>p{
+    margin:20px 0px;
+    font-size:15px;
+    font-weight:500;
+}
+.flex-item-left>.btn{
+    padding:12px 28px;
+    background-color:rgb(226,46,109);
+    border-radius:25px;
+    font-size:16px;
+    color:rgb(255,255,255);
+    text-transform:capitalize;
+    text-indent:5px;
+}
+.flex-item-left>.btn:hover i{
+    transform:translate(10px);
+    transition:transform 0.3s ease-in-out;
+}
+.flex-item-right{
+    background-image:url('../img/Circle\ design.svg');
+    background-position: center center;
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    flex:50%;
+    margin:6px;
+    padding:12px;
+}
+.flex-item-right .photo{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.flex-item-right .photo img{
+    width:50%;
+    height:auto;
+}

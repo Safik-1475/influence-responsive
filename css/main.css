@@ -100,6 +100,7 @@ p{
     justify-content:space-between;
     justify-content:center;
     margin:20px 0;
+    align-items: center;
 }
 .flex-item-left{
     flex:50%;
@@ -110,8 +111,8 @@ p{
     font-size:42px;
     line-height:1.2em;
 }
-.flex-item-left>p{
-    margin:20px 0px;
+.flex-item-left > p{
+    margin:30px 0px;
     font-size:15px;
     font-weight:500;
 }
@@ -143,7 +144,7 @@ p{
     justify-content:center;
 }
 .flex-item-right .photo img{
-    width:50%;
+    width:100%;
     height:auto;
 }
 
@@ -158,14 +159,11 @@ p{
     border-top:1.5px solid rgb(230,233,234);
     border-bottom:1.5px solid rgb(230,233,234)
 }
-/* .flex-compa img{
-    width:10%;
-    height:auto;
-} */
+
 /*----------------------------------------------------
                      collections
 ------------------------------------------------------*/
-.collection .section-title{
+ .section-title{
     text-align:center;
     font-size:32px;
     text-transform:capitalize;
@@ -180,7 +178,6 @@ p{
     display:flex;
     flex-direction: column;
     align-items: center;
-    /* background-color:pink; */
     box-shadow:0 0 30px rgb(230,233,234);
     padding:20px 10px;
     border-radius:10px;
@@ -199,4 +196,45 @@ p{
 }
 .grid-item-info i{
     color:rgb(242,137,39);
+}
+
+
+/*----------------------------------------------------
+                    tesmonials
+------------------------------------------------------*/
+.testimonials{
+    background-color:rgba(226,46,109,.8);
+    background-blend-mode: overlay;
+    background-image:url('../img/feedback/testimonials-bg.jpg');
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:100% 100%;
+    padding:20px 0px;
+}
+.testimonials-flex{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+}
+.testi-items{
+    display:flex;
+}
+.testi-photo{
+    margin-right:20px;
+}
+.testi-photo img{
+    border-radius:50%;
+    width:100%;
+    height:auto;
+}
+.testi-info .testi-title{
+    font-size:22px;
+    text-transform: uppercase;
+    margin:14px 0;
+}
+.testi-info span{
+    font-size:16px;
+    color:rgb(255,255,255);
+    font-weight: 500;
+    text-transform: capitalize;
 }

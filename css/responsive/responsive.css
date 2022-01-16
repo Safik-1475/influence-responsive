@@ -22,6 +22,10 @@
     .flex-container{
         flex-direction:column;
     }
+    .flex-item-left>.banner-title{
+        font-size:36px;
+        line-height:1.2em;
+    }
 
     .flex-compa{
         padding:30px 30px;
@@ -46,5 +50,46 @@
     }
     .grid-item-info{
         width:100%;
+    }
+    .grid-item-info {
+        width: 90%;
+    }
+}
+
+/* ------------------------------------------------------------------
+            Small devices large phones, 600px and up) 
+ -------------------------------------------------------------------*/
+ @media only screen and (max-width:600px){
+
+    .grid-container{
+        display:grid;
+        grid-template-columns:repeat(1,1fr);
+        gap:20px;
+    }
+    .grid-item-info {
+        width: 75%;
+    }
+    .testimonials-flex {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    }
+ }
+
+/*---------------------------------------------
+        small devices phone 480px down
+-----------------------------------------------*/
+@media only screen and (max-width:480px) {
+    /*----------collection---------------*/
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    }
+    /*-----------testimonials-------------------*/
+    .testimonials-flex {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
     }
 }
